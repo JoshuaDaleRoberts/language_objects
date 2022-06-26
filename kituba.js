@@ -1,4 +1,4 @@
-export const kit = {
+const kit = {
   v: function(verb, tense){
     let finalVerb = ""; let objMark = "";
     if (verb.includes(" ")) {
@@ -6,10 +6,15 @@ export const kit = {
       objMark = verb.substring(spPos, verb.length);
       verb = verb.substring(0, spPos);
     }
+    let a = verb.substring(0,2); 
+    if (a != "ku"){
+      return "Verb error"
+    }
     //tenses
     //0 = present
     if (tense == 0){
-      finalVerb = verb.substring(1); 
+      finalVerb = verb.substring(2); 
+      
     }
     //1 = present progressive, 
     //2 = future
