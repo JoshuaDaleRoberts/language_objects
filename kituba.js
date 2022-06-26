@@ -41,7 +41,10 @@ const kit = {
 
 
 function testingFunction(){
-  let a =  kit.v("kusingala",0);
+  let a = "";
+  for (let i = 0; i++; i<5){
+    a += kit.v("kusingala",i);
+  }
   document.getElementById("console").innerHTML = a;
 }
 
