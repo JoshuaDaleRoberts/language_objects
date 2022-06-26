@@ -41,10 +41,8 @@ const kit = {
 
 
 function testingFunction(){
-  let a = "";
-  for (let i = 0; i++; i<4){
-    a += kit.v("kusingala",i); 
-  }
+  let a = kit.v("kusingala",i); 
+  a = "dingus"; 
   document.getElementById("console").innerHTML = a;
 }
 
